@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-pink-primary: #E8437F;
+    --color-pink-light: #FFF0F5;
+    --color-pink-medium: #FFD6E7;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-800 antialiased;
+    font-feature-settings: "palt";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-snug;
+  }
+}
+
+@layer components {
+  /* LINE CTAボタン */
+  .btn-line {
+    @apply inline-flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#04a846] text-white font-bold rounded-2xl px-6 py-4 text-base transition-all duration-200 shadow-lg hover:shadow-xl active:scale-95;
+  }
+  .btn-line-sm {
+    @apply inline-flex items-center justify-center gap-2 bg-[#06C755] hover:bg-[#04a846] text-white font-bold rounded-xl px-4 py-2.5 text-sm transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+  }
+
+  /* ピンクCTA */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-pink-500 hover:bg-pink-600 text-white font-bold rounded-2xl px-6 py-4 text-base transition-all duration-200 shadow-[0_4px_24px_rgba(232,67,127,0.32)] hover:shadow-[0_6px_32px_rgba(232,67,127,0.4)] active:scale-95;
+  }
+
+  /* カード */
+  .shop-card {
+    @apply bg-white rounded-3xl p-5 shadow-[0_2px_16px_rgba(232,67,127,0.08)] hover:shadow-[0_8px_32px_rgba(232,67,127,0.16)] transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  /* バッジ */
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  .badge-pink {
+    @apply badge bg-pink-50 text-pink-600;
+  }
+  .badge-green {
+    @apply badge bg-emerald-50 text-emerald-700;
+  }
+  .badge-gray {
+    @apply badge bg-gray-100 text-gray-500;
+  }
+
+  /* セクションタイトル */
+  .section-title {
+    @apply text-2xl font-bold text-gray-800 mb-2;
+  }
+  .section-subtitle {
+    @apply text-sm text-gray-500;
+  }
+}
+
+@layer utilities {
+  /* スクロールバー非表示 */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* テキストグラデーション */
+  .text-gradient-pink {
+    @apply bg-gradient-to-r from-pink-500 to-rose-400 bg-clip-text text-transparent;
+  }
+}
+
+/* 固定フッターCTAのための余白 */
+body {
+  padding-bottom: 72px;
+}

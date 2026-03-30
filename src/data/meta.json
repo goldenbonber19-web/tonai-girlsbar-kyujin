@@ -1,0 +1,22 @@
+{
+  "totalShops": 30,
+  "todayUpdated": 3,
+  "weekAdded": 8,
+  "lastUpdated": "2025-01-16T10:00:00+09:00",
+  "areaStats": [
+    { "area": "新宿・歌舞伎町", "count": 5, "slug": "shinjuku" },
+    { "area": "渋谷", "count": 4, "slug": "shibuya" },
+    { "area": "池袋", "count": 3, "slug": "ikebukuro" },
+    { "area": "上野・御徒町", "count": 3, "slug": "ueno" },
+    { "area": "秋葉原", "count": 1, "slug": "akihabara" },
+    { "area": "神田", "count": 2, "slug": "kanda" },
+    { "area": "新橋", "count": 2, "slug": "shimbashi" },
+    { "area": "六本木・西麻布", "count": 2, "slug": "roppongi" },
+    { "area": "赤坂", "count": 2, "slug": "akasaka" },
+    { "area": "銀座", "count": 2, "slug": "ginza" },
+    { "area": "蒲田", "count": 2, "slug": "kamata" },
+    { "area": "町田", "count": 2, "slug": "machida" },
+    { "area": "立川", "count": 2, "slug": "tachikawa" },
+    { "area": "吉祥寺", "count": 2, "slug": "kichijoji" }
+  ]
+}
