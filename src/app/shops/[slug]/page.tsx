@@ -129,7 +129,7 @@ export default async function ShopDetailPage({ params }: Props) {
                 <div className="min-w-0">
                   <p className="text-xs text-gray-400 mb-0.5">{f.name}</p>
                   <ConditionBadge
-                    value={(base as Record<string, unknown>)[f.field] as boolean | null}
+                    value={(base as unknown as Record<string, unknown>)[f.field] as boolean | null}
                     trueLabel="あり"
                     falseLabel="なし"
                     size="md"
