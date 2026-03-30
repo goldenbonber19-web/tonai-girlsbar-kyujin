@@ -1,12 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  // TypeScript の strict モードを保ちつつビルドを通す
   typescript: {
     ignoreBuildErrors: false,
   },
